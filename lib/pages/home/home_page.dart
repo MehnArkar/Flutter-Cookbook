@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_cookbook/pages/animate_container/animateContainer_page.dart';
 import 'package:flutter_cookbook/pages/animation/animation_main.dart';
 import 'package:flutter_cookbook/utils/app_constant.dart';
 import 'package:flutter_cookbook/utils/globle_method.dart';
@@ -80,10 +81,10 @@ class HomePage extends StatelessWidget {
       childAspectRatio: 1,
       crossAxisCount: 2,
       children: [
-        eachItem('Dragable Card', MainAnimationPage()),
-        eachItem('Animation', MainAnimationPage()),
-        eachItem('Animation', MainAnimationPage()),
-        eachItem('Animation', MainAnimationPage()),
+        eachItem('Dragable Card', const MainAnimationPage()),
+        eachItem('Animate\nContainer', const AnimateContainerPage()),
+        eachItem('Animation', const MainAnimationPage()),
+        eachItem('Animation', const MainAnimationPage()),
       ],
     );
   }
