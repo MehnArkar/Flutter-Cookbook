@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_cookbook/pages/animate_container/animateContainer_page.dart';
 import 'package:flutter_cookbook/pages/animation/animation_main.dart';
+import 'package:flutter_cookbook/pages/download_button/my_download_btn.dart';
+import 'package:flutter_cookbook/pages/instagram_filter/insta_filter_page.dart';
 import 'package:flutter_cookbook/utils/app_constant.dart';
 import 'package:flutter_cookbook/utils/globle_method.dart';
 import 'package:flutter_cookbook/utils/globle_variable.dart';
@@ -65,6 +65,7 @@ class HomePage extends StatelessWidget {
             ),
             Text(
               title,
+              textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
           ],
@@ -83,8 +84,9 @@ class HomePage extends StatelessWidget {
       children: [
         eachItem('Dragable Card', const MainAnimationPage()),
         eachItem('Animate\nContainer', const AnimateContainerPage()),
+        eachItem('Cupertino\nDownload Button', const MyDownloadBtn()),
         eachItem('Animation', const MainAnimationPage()),
-        eachItem('Animation', const MainAnimationPage()),
+        eachItem('Instagram\nFilter', const InstaFilterPage())
       ],
     );
   }
